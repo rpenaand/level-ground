@@ -21,51 +21,137 @@ ul {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
+h1 {
+  font-size: 7.2rem;
+}
+
+img {
+  width: 80%;
+}
+
+i {
+  font-size: 3.2rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+  background-color: transparent;
+  color: aliceblue;
+  border: none;
+}
+
+.btn {
+  padding: 1.6rem;
+  background-color: aliceblue;
+  color: rgb(70, 70, 70);
+  border-radius: 0.8rem;
+  font-weight: 600;
+}
+
+.btn--ghost {
+  padding: 1.6rem 3.2rem;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 0;
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  padding: 0 2.4rem;
+  margin-bottom: -8rem;
+}
+
 .nav {
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  width: 100%;
-  top: 0;
+}
+
+.nav__list {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.nav__link {
+  color: aliceblue;
 }
 
 .section-hero {
-  background-color: rgb(25, 59, 137);
-  padding: 8rem 2.4rem 6.4rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: aliceblue;
   text-align: center;
   min-height: 70vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.484),
+      rgba(0, 0, 0, 0)
+    ),
+    url(images/uriel-soberanes-ngd2uo1eyZg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 2.4rem;
+}
+
+.section-hero p {
+  font-size: 1.8rem;
 }
 
 .section-about,
 .section-services,
 .section-cta {
-  background-color: bisque;
   text-align: center;
   padding: 8rem 2.4rem;
 }
 
 .section-services {
-  background-color: aquamarine;
+  background-color: rgb(214, 219, 224);
   display: flex;
   justify-content: space-between;
+  gap: 3.2rem;
 }
 
 .footer {
-  background-color: rgb(25, 25, 65);
+  background-color: rgb(30, 35, 48);
   color: aliceblue;
+  padding: 1.8rem 2.4rem;
 }
 
 .footer-items {
   display: flex;
   justify-content: space-between;
-  padding: 1.8rem 2.4rem;
 }
 
 [class*='footer__section'] {
-  flex: 0 0 20rem;
+  flex: 0 0 30rem;
+}
+
+.margin-bottom-medium--large {
+  margin-bottom: 4.8rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 3.2rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2.4rem;
+}
+
+.container {
+  width: 164rem;
+  margin: 0 auto;
 }
